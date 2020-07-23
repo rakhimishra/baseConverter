@@ -1,18 +1,31 @@
-h1,#result,#base,#num{
+h1{
     text-align: center;
-    margin-top: 20px;
+     margin-top: 20px;
+    /* color:Red; */
+    font: italic bold 30px Georgia, serif;
     /* display: flex;
     align-items: center;
     justify-content: center */
+}
+#result,#base,#num{
+    text-align: center;
+    margin-top: 20px;
+    color:white;
+    font: italic bold 20px Georgia, serif;
+    margin-bottom: 10px;
 }
 .row{
     margin-top: 20px;
 }
 .wrapper{
-    background-color: antiquewhite;
+    background-color: black;
     border: 1px solid black;
-    box-shadow: 5px 10px rgb(216, 216, 216);
+    box-shadow: 5px 10px rgb(141, 137, 137);
+   
 }
 #inputwrapper{
     padding-top: 20px;
+}
+body{
+    background-color: aliceblue;
 }
