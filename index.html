@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+
+</head>
+<body>
+    <h1>Base Converter App </h1>
+    <div class= "container col-md-8 wrapper">
+        
+            <div id ="inputwrapper">
+                <input type="text" id = "input" placeholder="Enter the number you want to convert in another base" class="form-control" aria-label="Text input with segmented dropdown button">
+            </div>
+            
+            <div class="row">
+                <div class="col-sm">
+                <button type="button" onclick = "toBin()" class="btn btn-primary">Decimal To binary</button>
+                
+                </div>
+                <div class="col-sm">
+                <button type="button" onclick = " toHex()" class="btn btn-primary">Decimal To Hexadecimal</button>
+                </div>
+                <div class="col-sm">
+                <button type="button" onclick="toOct()" class="btn btn-primary">Decimal To Octal</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                <button type="button" onclick = "Bintodec()" class="btn btn-secondary">Binary To decimal</button>
+                </div>
+                <div class="col-sm">
+                <button type="button" onclick = "Bintohex()" class="btn btn-secondary">Binary To Hexadecimal</button>
+                </div>
+                <div class="col-sm">
+                <button type="button" onclick="BintoOct()" class="btn btn-secondary">Binary To Octal</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                <button type="button" onclick="hexTodec()" class="btn btn-danger">Hexadecimal To decimal</button>
+                </div>
+                <div class="col-sm">
+                <button type="button" onclick="hexTodec()" class="btn btn-danger">Hexadecimal to binary</button>
+                </div>
+                <div class="col-sm">
+                <button type="button" onclick="hexTodec()" class="btn btn-danger">Hexadecimal to Octal</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                <button type="button" onclick= "octtodec()" class="btn btn-dark">Octal to decimal</button>
+                </div>
+                <div class="col-sm">
+                <button type="button" onclick= "octtohex()" class="btn btn-dark">Octal to hexadecimal</button>
+                </div>
+                <div class="col-sm">
+                <button type="button" onclick= "octtobin()" class="btn btn-dark">Octal to binary</button>
+                </div>
+            </div>
+
+            <div id = "result"></div>
+            <div id = "num"></div>
+            <div id = "base"></div>
+         
+    </div>
+    
+
+
+    <script src="./script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>
